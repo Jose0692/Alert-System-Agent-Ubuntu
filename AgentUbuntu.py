@@ -1,8 +1,17 @@
-#VERSION DE PYTHON QUE TENEMOS QUE TENER INSTALADA 3.11.9
-#BAJAR LA VERSION DE LIBERIA PYSNMP
+###############################
+## AGENTE DESARROLADO POR JJ ##
+###############################
+
+#Version de python: 3.11.9
+
+########################
+## CONFIGURACION SMTP ##
+########################
+
+#Descargar libreria PYSNMP
 #pip uninstall pysnmp -y
 #pip install pysnmp==4.4.12
-#BAJAR VERSION DE LIBERIA PYASN1
+#Descargar libreria PYASN1
 #pip uninstall pyasn1 -y
 #pip install pyasn1==0.4.8
 
@@ -41,7 +50,9 @@ def snmp_get(ip, community, oid):
 # Obtener info SNMP
 device_name = snmp_get(target_ip, community, oid)
 
-#ENVIO DE CORREO ELECTRONICO
+#################################################
+## ENVIO DE CORREO ELECTRONICO POR OUTLOOK 365 ##
+#################################################
 
 import smtplib
 from email.message import EmailMessage
@@ -75,7 +86,9 @@ try:
 except Exception as e:
     print(f"Error al enviar el correo: {str(e)}")
 
-#ENVIO DE MENSAJE DE TEXTO
+###################################
+## ENVIO DE MENSAJE POR WHATSAPP ##
+###################################
 
 import requests
 
