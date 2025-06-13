@@ -94,14 +94,14 @@ import requests
 
 url = "https://graph.facebook.com/v22.0/745562308629793/messages"
 headers = {
-    "Authorization": "Bearer EAAKPKAtBUfcBO77djZArMNxMAsUR63D3CVpRVpaMNdOfZCumYzvcBj1zdl2TXXQQZA7CJdXT0RZC6ZBwalrhN6aDHjZAziLAs8yS62JTy5lRKCv2s1bIFZBeJiZBnPXsyEZCzeYenMJhCI0EQRRqW4XDKwQK4I5DCwiebGEWSSO1NW9b98rGoG5G3aoXVhZAdlflOmpdZAO2MZBGamiEhwdB4oz9zEUYw1GFgmEXDwEZD",
+    "Authorization": "Bearer EAAKPKAtBUfcBOxjxL5DgfCedIivJElYZCopK4uFjxcGsjtaMAFxBcBQ6uguNiZCiryw3OJqFGi9mEM9aTjID5TNDwtCR1RYHksfADzTm3XZC54rRj40pgW38ug6L6DTSgwBHJDDOWwTWZBdYdJeVXM6pAf512nGZCp9mqgTQyhOUbDVJ1Q7gr8sZAAdeSc0A0V5x6JZBNd7CdRfVaw39ZA05NYzRz41rGkfJXBwZD",
     "Content-Type": "application/json"
 }
 data = {
     "messaging_product": "whatsapp",
     "to": "51981283879",
     "type": "text",
-    "text": {"body": "Mensaje automático desde API"}
+    "text": {"body": device_name}
 }
 
 try:
@@ -117,3 +117,6 @@ except Exception as e:
     print("⚠️ Error en la conexión:", str(e))
 
 # Finalización del script
+
+#hola
+#Jose
